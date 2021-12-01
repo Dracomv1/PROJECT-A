@@ -26,3 +26,4 @@ Plataforma de reproduccion multimedia, noticias y principales actualizaciones so
 * (2:30 Pm) Upload GitHub " 5 min "
 * 6 Dias a la semana *
 ----------------------------SCRUM-------------------------------------------------
+...
