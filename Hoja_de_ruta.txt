@@ -1,0 +1,29 @@
+-----------------PROYECTO---------------------------------------------------------
+--INTEGRANTES---------------------------------------------------------------------
+*Justyn Antonelly Meza Duran*
+*Marlon David Manjarres Valencia* 
+-------------------------------FASES----------------------------------------------
+*F1*
+*F2*
+*F3*
+*F4*
+------------------------------RESUMEN---------------------------------------------
+Plataforma de reproduccion multimedia, noticias y principales actualizaciones sobre el mundo de la animacion. Tomando de ejemplo a las principales plataformas multimedia en el mercado.
+-----------------------------PROGRAMAS--------------------------------------------
+*Visual Studio Code*
+*WebStrom*
+*CS6* 
+*Base de datos*
+*Servidor* 
+----------------------------DURACION DEL SPRINT-----------------------------------
+*F! (2 semanas "4 horas al dia" )*
+*F2 (2 semanas "4 horas al dia" )*
+*F3 (2 semanas "4 horas al dia" )*
+*f4 (2 semanas "4 horas al dia" )*
+---------------------------PLANNING DEL DIA---------------------------------------
+* (10 Am) Reunion "15 min" *
+* (10:15 Am) Codding "4 horas (Finalizacion: 2:15 Pm) " *
+* (2:30 Pm) Upload GitHub " 5 min "
+* 6 Dias a la semana *
+----------------------------SCRUM-------------------------------------------------
+...
