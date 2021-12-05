@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     min-height: 100vh;
     background-image: linear-gradient(-45deg, #242323 50%, #771616 50%);
     font-family: 'Raleway', sans-serif;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
@@ -18,7 +18,7 @@ body{
     color: #fff;
 }
 
-.subtitulos{
+.subtitulos {
     margin: 0;
     color: #000;
     display: inline;
@@ -27,8 +27,8 @@ body{
     text-transform: uppercase;
 }
 
-.sabor{
-    color: #fff;   
+.sabor {
+    color: #fff;
     margin: 7px 0;
     font-size: 50px;
     font-weight: 600;
@@ -37,7 +37,7 @@ body{
     margin-top: 0;
 }
 
-.linea-divisora{
+.linea-divisora {
     width: 80%;
     height: 2px;
     background-color: #36221c;
@@ -48,10 +48,122 @@ body{
 Materialize styles
 */
 
-.carousel .carousel-item{
+.scroll {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.scroll .back,
+.next {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.carousel {
+    min-height: 300px;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: #000;
+    color: #fff;
+    width: 220px;
+    height: 300px;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.645);
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .carousel-item .info {
+    z-index: 1;
+}
+
+.carousel .carousel-item h6 {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel .carousel-item:hover {
+    transition: 0.5s;
+    width: 240px;
+    height: 320px;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.645);
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.overlay .popup {
+    background: #242323e3;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 60rem;
+}
+
+.overlay .popup .info{
+    display: flex;
+    flex-direction: row;
+}
+
+.overlay .popup .info .imgInfo{
+    
+}
+
+.overlay .popup .info .textInfo{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.overlay .popup .btn-cerrar-popup{
+    color: white;
+    display: block;
+    text-align: right;
+    font-size: 16px;
+}
+
+.animeName, .season, .episodes, .subTitle{
+    font-weight: bold;
+    margin: 0;
+}
+
+.animeName{
+    margin-bottom: 10px;
+}
+
+.subTitle{
+    margin: 10px 0 10px 0;
+}
+
+.overlay .popup .button-view{
+    background-color: #f03232;
 }

@@ -1,51 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Bootstrap.css - framework for desing-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!--Css document - Styles.css-->
-    <link rel="stylesheet" href="../Css/Styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--Materialize.css - framework for carousel-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Css document - Styles.css-->
+    <link rel="stylesheet" href="../Css/Styles.css">
 
     <!--Google fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap">
     <title>ANIME</title>
 </head>
+
 <body>
-    
+
     <div class="container">
+
         <div class="row">
             <div class="col s12">
                 <h1 class="titulo">¿Qué hay para ver?</h1>
 
                 <div class="carousel center-align">
                     <div class="carousel-item">
+                        <button class="btn-abrir-popup" id="btn-abrir-popup">
+                            <img src="../Images/Nagatoro.jpg" alt="">
+                        </button>
+                    </div>
+                    <div class="carousel-item">
+                        <button class="btn-abrir-popup" id="btn-abrir-popup">
+                            <img src="../Images/BNHA.jpg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="carousel-item">
+                        <button class="btn-abrir-popup" id="btn-abrir-popup">
+                            <img src="../Images/BlackClover.jpg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="carousel-item">
+                        <button class="btn-abrir-popup" id="btn-abrir-popup">
+                            <img src="../Images/Naruto.jpg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="carousel-item">
+                        <button class="btn-abrir-popup" id="btn-abrir-popup">
+                            <img src="../Images/Sao.jpg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay " id="overlay">
+            <div class="popup" id="popup">
+
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </a>
+
+                <div class="info">
+                    <div class="ImageInfo">
                         <img src="../Images/Nagatoro.jpg" alt="">
                     </div>
 
-                    <div class="carousel-item">
-                        <img src="../Images/BNHA.jpg" alt="">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="../Images/BlackClover.jpg" alt="">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="../Images/Naruto.jpg" alt="">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="../Images/Sao.jpg" alt="">
+                    <div class="textInfo">
+                        <h6 class="animeName">Ijiranaide, Nagatoro-san</h6>
+                        <p class="season">Temporada 1</p>
+                        <p class="episodes">12 episodios</p>
+                        <h6 class="subTitle">Sinopsis</h6>
+                        <p class="sinopsis">
+                            A la estudiante de preparatoria Hayase Nagatoro le encanta pasar su tiempo libre haciendo
+                            una
+                            cosa, ¡y eso es molestar a su Senpai! Después de que Nagatoro y sus amigos se topan con los
+                            dibujos del aspirante a artista, disfrutan molestando sin piedad
+                            al tímido Senpai. Nagatoro decide continuar con su cruel juego y lo visita a diario para
+                            poder
+                            obligar a Senpai a hacer lo que le interese en ese momento, especialmente si eso lo hace
+                            sentir
+                            incómodo. Ligeramente interesado por
+                            Nagatoro y algo temeroso de ella, Senpai está constantemente involucrado en sus payasadas
+                            mientras sus intereses, pasatiempos, apariencia e incluso personalidad se usan en su contra
+                            mientras ella se entretiene a sus expensas. A
+                            medida que pasa el tiempo, Senpai se da cuenta de que no le desagrada la presencia de
+                            Nagatoro,
+                            y los dos desarrollan una amistad incómoda mientras uno soporta pacientemente las payasadas
+                            del
+                            otro.
+                        </p>
+                        
                     </div>
                 </div>
+                <button class="button-view btn">Reproducir</button>
+
             </div>
         </div>
     </div>
@@ -57,4 +119,5 @@
     <!--js document - Main.js-->
     <script src="../Js/Main.js"></script>
 </body>
+
 </html>
